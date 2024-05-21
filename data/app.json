@@ -1,36 +1,116 @@
 {
-    "users":[
+  "users": [
+    {
+      "username": "",
+      "password": "",
+      "id": "c417"
+    }
+  ],
+  "products": [
+    {
+      "productId": "1",
+      "name": "Running Shoes",
+      "price": 10,
+      "available": 10
+    },
+    {
+      "productId": "2",
+      "name": "Denim Jacket",
+      "price": 20,
+      "available": 15
+    },
+    {
+      "productId": "3",
+      "name": "Silk Scarf",
+      "price": 30,
+      "available": 33
+    },
+    {
+      "productId": "4",
+      "name": "Casual Shorts",
+      "price": 40,
+      "available": 51
+    },
+    {
+      "productId": "5",
+      "name": "Leather Belt",
+      "price": 50,
+      "available": 35
+    },
+    {
+      "productId": "6",
+      "name": "Winter Gloves",
+      "price": 60,
+      "available": 43
+    },
+    {
+      "productId": "7",
+      "name": "Wool Socks",
+      "price": 70,
+      "available": 67
+    },
+    {
+      "productId": "8",
+      "name": "Sports Cap",
+      "price": 80,
+      "available": 92
+    },
+    {
+      "productId": "9",
+      "name": "Hoodie",
+      "price": 90,
+      "available": 5
+    }
+  ],
+  "cart": [
+    {
+      "id": "9c9f",
+      "itemName": "Silk Scarf",
+      "itemPrice": 30,
+      "quantity": 1
+    },
+    {
+      "id": "7e49",
+      "itemName": "Denim Jacket",
+      "itemPrice": 20,
+      "quantity": 1
+    },
+    {
+      "id": "909e",
+      "itemName": "Silk Scarf",
+      "itemPrice": 30,
+      "quantity": 1
+    },
+    {
+      "id": "40f2",
+      "itemName": "Running Shoes",
+      "itemPrice": 10,
+      "quantity": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "015e",
+      "username": "yourUsername",
+      "date": "Tuesday 21 May 2024",
+      "totalPrice": "80.00",
+      "items": [
         {
-            "username":"",
-            "password":""
-        }
-    ],
-    "products":[
-        { "id":"", "name": "Running Shoes", "price": 10, "available": 10 },
-        { "id":"", "name": "Denim Jacket", "price": 20, "available": 15 },
-        { "id":"", "name": "Silk Scarf", "price": 30, "available": 33 },
-        { "id":"", "name": "Casual Shorts", "price": 40, "available": 51 },
-        { "id":"", "name": "Leather Belt", "price": 50, "available": 35 },
-        { "id":"", "name": "Winter Gloves", "price": 60, "available": 43 },
-        { "id":"", "name": "Wool Socks", "price": 70, "available": 67 },
-        { "id":"", "name": "Sports Cap", "price": 80, "available": 92 },
-        { "id":"", "name": "Hoodie", "price": 90, "available": 5 }
-    ],
-    "cart":[
+          "itemName": "Silk Scarf",
+          "itemPrice": 30,
+          "quantity": 1
+        },
         {
-            "id":"",
-            "name":"",
-            "price":"",
-            "quantity":""
-        }
-    ],
-    "orders":[
+          "itemName": "Denim Jacket",
+          "itemPrice": 20,
+          "quantity": 1
+        },
         {
-            "orderId":"",
-            "id":"",
-            "name":"",
-            "price":"",
-            "quantity":""
+          "itemName": "Silk Scarf",
+          "itemPrice": 30,
+          "quantity": 1
         }
-    ]
+      ]
+    }
+  ]
 }

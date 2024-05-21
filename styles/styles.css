@@ -52,14 +52,17 @@ button:hover {
 }
 
 a.cart-link {
-    background-color: #007bff;
     color: white;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
 }
 
-a.cart-link:hover {
+.navBtn {
+    background-color: #007bff;
+}
+
+.navBtn:hover {
     background-color: #0056b3;
 }
 
@@ -124,4 +127,12 @@ a.back-link:hover {
     text-align: center;
     margin-top: 20px;
     font-size: 1.5em;
+}
+
+.CheckOut {
+    background-color: #007bff;
+}
+
+.CheckOut:hover {
+    background-color: #0056b3;
 }
