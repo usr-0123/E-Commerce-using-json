@@ -6,11 +6,15 @@
         }
     ],
     "products":[
-        {
-            "id":"",
-            "name":"",
-            "price":""
-        }
+        { "id":"", "name": "Running Shoes", "price": 10, "available": 10 },
+        { "id":"", "name": "Denim Jacket", "price": 20, "available": 15 },
+        { "id":"", "name": "Silk Scarf", "price": 30, "available": 33 },
+        { "id":"", "name": "Casual Shorts", "price": 40, "available": 51 },
+        { "id":"", "name": "Leather Belt", "price": 50, "available": 35 },
+        { "id":"", "name": "Winter Gloves", "price": 60, "available": 43 },
+        { "id":"", "name": "Wool Socks", "price": 70, "available": 67 },
+        { "id":"", "name": "Sports Cap", "price": 80, "available": 92 },
+        { "id":"", "name": "Hoodie", "price": 90, "available": 5 }
     ],
     "cart":[
         {
