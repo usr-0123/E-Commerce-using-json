@@ -1,0 +1,32 @@
+{
+    "users":[
+        {
+            "username":"",
+            "password":""
+        }
+    ],
+    "products":[
+        {
+            "id":"",
+            "name":"",
+            "price":""
+        }
+    ],
+    "cart":[
+        {
+            "id":"",
+            "name":"",
+            "price":"",
+            "quantity":""
+        }
+    ],
+    "orders":[
+        {
+            "orderId":"",
+            "id":"",
+            "name":"",
+            "price":"",
+            "quantity":""
+        }
+    ]
+}
