@@ -10,104 +10,318 @@
     {
       "productId": "1",
       "name": "Running Shoes",
-      "price": 10,
-      "available": 10
+      "price": 100,
+      "available": 24,
+      "id": "5449"
     },
     {
       "productId": "2",
       "name": "Denim Jacket",
-      "price": 20,
-      "available": 15
+      "price": 100,
+      "available": 12,
+      "id": "9276"
     },
     {
       "productId": "3",
       "name": "Silk Scarf",
       "price": 30,
-      "available": 33
+      "available": 35,
+      "id": "619f"
     },
     {
       "productId": "4",
       "name": "Casual Shorts",
       "price": 40,
-      "available": 51
+      "available": 49,
+      "id": "7549"
     },
     {
       "productId": "5",
       "name": "Leather Belt",
       "price": 50,
-      "available": 35
+      "available": 34,
+      "id": "8798"
     },
     {
       "productId": "6",
       "name": "Winter Gloves",
       "price": 60,
-      "available": 43
+      "available": 43,
+      "id": "9bea"
     },
     {
       "productId": "7",
       "name": "Wool Socks",
       "price": 70,
-      "available": 67
+      "available": 67,
+      "id": "40ae"
     },
     {
       "productId": "8",
       "name": "Sports Cap",
       "price": 80,
-      "available": 92
+      "available": 92,
+      "id": "61c1"
     },
     {
       "productId": "9",
       "name": "Hoodie",
       "price": 90,
-      "available": 5
+      "available": 5,
+      "id": "35bc"
     }
   ],
   "cart": [
     {
-      "id": "9c9f",
-      "itemName": "Silk Scarf",
-      "itemPrice": 30,
-      "quantity": 1
-    },
-    {
-      "id": "7e49",
-      "itemName": "Denim Jacket",
-      "itemPrice": 20,
-      "quantity": 1
-    },
-    {
-      "id": "909e",
-      "itemName": "Silk Scarf",
-      "itemPrice": 30,
-      "quantity": 1
-    },
-    {
-      "id": "40f2",
+      "id": "5449",
       "itemName": "Running Shoes",
-      "itemPrice": 10,
+      "itemPrice": 100,
+      "quantity": 3
+    },
+    {
+      "id": "8798",
+      "itemName": "Leather Belt",
+      "itemPrice": 50,
+      "quantity": 1
+    },
+    {
+      "id": "7549",
+      "itemName": "Casual Shorts",
+      "itemPrice": 40,
       "quantity": 1
     }
   ],
   "orders": [
     {
-      "id": "015e",
+      "id": "c036",
       "username": "yourUsername",
-      "date": "Tuesday 21 May 2024",
-      "totalPrice": "80.00",
+      "date": "16:40:59 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
       "items": [
         {
-          "itemName": "Silk Scarf",
-          "itemPrice": 30,
-          "quantity": 1
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
         },
         {
-          "itemName": "Denim Jacket",
-          "itemPrice": 20,
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
           "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "09da",
+      "username": "yourUsername",
+      "date": "16:41:23 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
         },
         {
-          "itemName": "Silk Scarf",
-          "itemPrice": 30,
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "cd46",
+      "username": "yourUsername",
+      "date": "16:41:38 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "a0eb",
+      "username": "yourUsername",
+      "date": "16:45:26 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "b1a3",
+      "username": "yourUsername",
+      "date": "16:45:41 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "9ee6",
+      "username": "yourUsername",
+      "date": "16:46:1 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "debe",
+      "username": "yourUsername",
+      "date": "16:47:36 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "decb",
+      "username": "yourUsername",
+      "date": "16:48:33 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "e32a",
+      "username": "yourUsername",
+      "date": "17:1:23 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "d507",
+      "username": "yourUsername",
+      "date": "17:42:26 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "a633",
+      "username": "yourUsername",
+      "date": "17:46:9 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "b466",
+      "username": "yourUsername",
+      "date": "17:46:15 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "977e",
+      "username": "yourUsername",
+      "date": "17:50:22 Wednesday 22 May 2024",
+      "totalPrice": "350.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
           "quantity": 1
         }
       ]

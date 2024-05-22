@@ -18,8 +18,8 @@ function showItems(cartData) {
     listItem.innerHTML = `
       ${item.itemName} - Ksh.${item.itemPrice} x ${item.quantity}
       <div class="cart-item-buttons">
-        <button class="increase" onclick="updateCartItem('${item.name}', 1)">+</button>
-        <button class="decrease" onclick="updateCartItem('${item.name}', -1)">-</button>
+        <button class="increase" onclick="addItemQuantities('${item.id}','${item.quantity}')">+</button>
+        <button class="decrease" onclick="reduceItemQuantities('${item.id}','${item.quantity}')">-</button>
         <button class="delete" onclick="removeCartItem('${item.id}')">x</button>
       </div>`;
     container.appendChild(listItem);
@@ -52,28 +52,33 @@ async function pigaOrder(totalPrice, cartItems) {
     },
     body: JSON.stringify(newOrder)
   });
-  await clearCart()
-  return;
+  // await fetch(baseURL + "cart", {
+  //   method: "delete"
+  // })
 }
 
-async function updateCartItem(itemName, change) {
-    let cartItems = await fetch(baseURL+"cart");
-    let productsItems = await fetch(baseURL+"products");
-    const cartItemIndex = cartItems.findIndex(item => item.name === itemName);
-    const item = productsItems.find(item => item.name === itemName);
+async function addItemQuantities(id, quantity) {
+  let newQuantity = ++quantity
+  let updatedData = {
+    quantity: newQuantity
+  }
+  await fetch(baseURL + "cart/" + id,{
+    method: "PATCH",
+    body: JSON.stringify(updatedData)
+  })
+  getCartItems()
+}
 
-    if (cartItemIndex > -1 && item) {
-        cart[cartItemIndex].quantity += change;
-        item.available -= change;
-
-        if (cart[cartItemIndex].quantity <= 0) {
-            cart.splice(cartItemIndex, 1);
-        }
-
-        localStorage.setItem('cart', JSON.stringify(cart));
-        localStorage.setItem('items', JSON.stringify(items));
-        location.reload();
-    }
+async function reduceItemQuantities(id, quantity) {
+  let newQuantity = --quantity
+  let updatedData = {
+    quantity: newQuantity
+  }
+  await fetch(baseURL + "cart/" + id,{
+    method: "PATCH",
+    body: JSON.stringify(updatedData)
+  })
+  getCartItems()
 }
 
 async function removeCartItem(id){
@@ -88,28 +93,28 @@ async function removeCartItem(id){
     location.reload()
 };
 
-async function clearCart(){
-    const res = await fetch(baseURL+"cart")
-    if (res) {
-        await fetch(baseURL + "cart", {
-            method: "DELETE"    
-        });    
-    } else {
-        alert("Cart is empty")
-    }
-    return;
-};
+// async function clearCart(){
+    // await fetch(baseURL+"cart", {
+      // method: "DELETE"
+    // })
+    // location.reload()
+// };
 
 function getDateToday() {
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const date = new Date();
   
-    const date = new Date();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const dayOfWeek = daysOfWeek[date.getDay()];
+  const day = String(date.getDate()).padStart(2, '0');
+  const monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const month = monthsOfYear[date.getMonth()];
+  const year = date.getFullYear();
+
+    const time = `${hours}:${minutes}:${seconds}`
+    const dates = `${dayOfWeek} ${day} ${month} ${year}`
   
-    const dayOfWeek = daysOfWeek[date.getDay()];
-    const day = String(date.getDate()).padStart(2, '0');
-    const month = monthsOfYear[date.getMonth()];
-    const year = date.getFullYear();
-  
-    return `${dayOfWeek} ${day} ${month} ${year}`;
+    return `${time} ${dates}`;
 }
