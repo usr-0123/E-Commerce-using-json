@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .order {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .order-header {
+            font-weight: bold;
+        }
+        .order-items {
+            margin-top: 10px;
+        }
+        .orders-container{
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+        }
+        /* New */
+            /* In your CSS file or within a <style> tag */
+
+        .order-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .order-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .order-items {
+            margin-bottom: 10px;
+        }
+
+        .item {
+            margin-bottom: 5px;
+        }
+
+        .cancel-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .cancel-button:hover {
+            background-color: #0056b3;
+        }
+
+        .home-link, .cart-link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav-btns {
+            background-color: #007bff;
+        }
+
+        .nav-btns:hover {
+            background-color: #0056b3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="navigation">
+        <button id="nav-btns" style="background-color: #007bff; border: none; padding: 10px; border-radius: 5px;font-weight: 750;" onmouseover="this.style.backgroundColor='#0056b3';" onmouseout="this.style.backgroundColor='#007bff';">
+            <a href="../products/products.html" class="home-link">Continue shopping</a>
+        </button>
+        <button id="nav-btns" style="background-color: #007bff; border: none; padding: 10px; border-radius: 5px;font-weight: 750;" onmouseover="this.style.backgroundColor='#0056b3';" onmouseout="this.style.backgroundColor='#007bff';">
+            <a href="../cart/Cart.html" class="cart-link">Go to Cart</a>
+        </button>
+    </div>
+    <h1>Orders</h1>
+    <div id="orders-container" style="
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap">
+    </div>
+
+    <script src="./orders.js"></script>
+</body>
+</html>
