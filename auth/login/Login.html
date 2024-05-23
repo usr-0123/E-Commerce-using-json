@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="../authStyles.css" />
+        <script src="./Login.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container" id="login-form">
+                <h2>Login</h2>
+                <form id="login">
+                    <label for="login-username">Username</label>
+                    <input
+                        type="text"
+                        id="login-username"
+                        name="username"
+                        required
+                    />
+                    <label for="login-password">Password</label>
+                    <input
+                        type="password"
+                        id="login-password"
+                        name="password"
+                        required
+                    />
+                    <button type="submit" onclick="logUser()">Login</button>
+                </form>
+                <h4>
+                    <i>
+                        Don't have an account?<a
+                            href="../register/Register.html"
+                            >Click here.</a
+                        >to create an account</i
+                    >
+                </h4>
+            </div>
+        </div>
+    </body>
+</html>
