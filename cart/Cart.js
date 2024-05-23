@@ -26,8 +26,13 @@ function showItems(cartData) {
     totalPrice += item.itemPrice * item.quantity;
   });
 
-  document.getElementById('total-price').textContent = totalPrice.toFixed(2);
+  const checkoutButton = document.getElementById('order');
+  checkoutButton.innerHTML = `Checkout ${totalPrice.toFixed(2)}`
+  checkoutButton.onclick = function() {
   pigaOrder(totalPrice.toFixed(2), cartData);
+};
+
+  container.appendChild(checkoutButton);
 }
 
 async function pigaOrder(totalPrice, cartItems) {
@@ -52,9 +57,7 @@ async function pigaOrder(totalPrice, cartItems) {
     },
     body: JSON.stringify(newOrder)
   });
-  // await fetch(baseURL + "cart", {
-  //   method: "delete"
-  // })
+  alert('Order placed successfully!')
 }
 
 async function addItemQuantities(id, quantity) {
@@ -92,13 +95,6 @@ async function removeCartItem(id){
     }
     location.reload()
 };
-
-// async function clearCart(){
-    // await fetch(baseURL+"cart", {
-      // method: "DELETE"
-    // })
-    // location.reload()
-// };
 
 function getDateToday() {
   const date = new Date();

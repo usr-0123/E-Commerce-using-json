@@ -20,17 +20,25 @@ function showOrders(orderData) {
 
     container.innerHTML = '';
     orderData.forEach(order => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `${order.date} - Ksh.${order.totalPrice}`;
+        const listItem = document.createElement('div');
+        listItem.setAttribute('id', `order-${order.id}`);
+        listItem.classList.add('order-card');
 
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Cancel order';
+        listItem.innerHTML = `
+            <div class="order-header">${order.date} - Ksh.${order.totalPrice}</div>
+            <div class="order-items">
+                ${order.items.map(item => `<div class="item">${item.itemName} x ${item.quantity}</div>`).join('')}
+            </div>
+            <button class="cancel-button">Cancel order</button>
+        `;
+
+        const deleteButton = listItem.querySelector('.cancel-button');
         deleteButton.addEventListener('click', () => deleteOrder(order.id));
-        listItem.appendChild(deleteButton);
 
         container.appendChild(listItem);
     });
 }
+
 
 async function deleteOrder(orderId) {
     try {
@@ -40,7 +48,6 @@ async function deleteOrder(orderId) {
         if (!res.ok) {
             throw new Error("Failed to delete order");
         }
-        // If successful, update the displayed orders
         getOrders();
     } catch (error) {
         console.error("Error deleting order:", error);

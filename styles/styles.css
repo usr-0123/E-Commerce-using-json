@@ -34,7 +34,7 @@ h1, h2 {
 }
 
 button {
-    background-color: #5cb85c;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -43,7 +43,7 @@ button {
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #0056b3;
 }
 
 .cart-summary {
@@ -94,13 +94,21 @@ a.cart-link {
 }
 
 .cart-item-buttons .increase {
-    background-color: #5cb85c;
+    background-color: #007bff;
     color: white;
 }
 
 .cart-item-buttons .decrease {
-    background-color: #f0ad4e;
+    background-color: #007bff;
     color: white;
+}
+
+.increase:hover,.decrease:hover {
+    background-color: #0056b3;
+}
+
+.delete:hover {
+    background-color: #a9534f;
 }
 
 .cart-item-buttons .delete {
