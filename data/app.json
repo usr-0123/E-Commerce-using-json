@@ -1,82 +1,119 @@
 {
   "users": [
     {
-      "email": "",
       "username": "",
       "password": "",
-      "id": "6f05"
-    },
-    {
-      "id": "173b",
-      "username": "evan_mworia",
-      "email": "evannji99@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "db48",
-      "username": "evannji99@gmail.com",
-      "email": "evannji99@gmail.com",
-      "password": "1213"
-    },
-    {
-      "id": "41a6",
-      "username": "evannji99@gmail.com",
-      "email": "evannji99@gmail.com",
-      "password": "1112344567890987654"
-    },
-    {
-      "id": "7591",
-      "username": "evannji99@gmail.com",
-      "email": "evannji99@gmail.com",
-      "password": "1234567890-"
-    },
-    {
-      "id": "97be",
-      "username": "sdffsdfsdfsdfsdf",
-      "email": "evannji99@gmail.com",
-      "password": "dxccx ds cx "
-    },
-    {
-      "id": "9692",
-      "username": "mtaalinktechnologies@gmail.com",
-      "email": "evannji99@gmail.com",
-      "password": "sknnscnksncnksnoco"
-    },
-    {
-      "id": "4443",
-      "username": "evan_mworia1",
-      "email": "evannji99@gmail.com",
-      "password": "wcibibcbwic"
-    },
-    {
-      "id": "c35c",
-      "username": "test",
-      "email": "joendambuki16@gmail.com",
-      "password": "1234567890"
+      "id": "c417"
     }
   ],
   "products": [
     {
-      "id": "",
-      "name": "",
-      "price": ""
+      "productId": "1",
+      "name": "Running Shoes",
+      "price": 100,
+      "available": 24,
+      "id": "5449"
+    },
+    {
+      "productId": "2",
+      "name": "Denim Jacket",
+      "price": 100,
+      "available": 12,
+      "id": "9276"
+    },
+    {
+      "productId": "3",
+      "name": "Silk Scarf",
+      "price": 30,
+      "available": 35,
+      "id": "619f"
+    },
+    {
+      "productId": "4",
+      "name": "Casual Shorts",
+      "price": 40,
+      "available": 49,
+      "id": "7549"
+    },
+    {
+      "productId": "5",
+      "name": "Leather Belt",
+      "price": 50,
+      "available": 34,
+      "id": "8798"
+    },
+    {
+      "productId": "6",
+      "name": "Winter Gloves",
+      "price": 60,
+      "available": 43,
+      "id": "9bea"
+    },
+    {
+      "productId": "7",
+      "name": "Wool Socks",
+      "price": 70,
+      "available": 67,
+      "id": "40ae"
+    },
+    {
+      "productId": "8",
+      "name": "Sports Cap",
+      "price": 80,
+      "available": 92,
+      "id": "61c1"
+    },
+    {
+      "productId": "9",
+      "name": "Hoodie",
+      "price": 90,
+      "available": 5,
+      "id": "35bc"
     }
   ],
   "cart": [
     {
-      "id": "",
-      "name": "",
-      "price": "",
-      "quantity": ""
+      "id": "5449",
+      "itemName": "Running Shoes",
+      "itemPrice": 100,
+      "quantity": 3
+    },
+    {
+      "id": "8798",
+      "itemName": "Leather Belt",
+      "itemPrice": 50,
+      "quantity": 1
+    },
+    {
+      "id": "7549",
+      "itemName": "Casual Shorts",
+      "itemPrice": 40,
+      "quantity": 1
     }
   ],
   "orders": [
     {
-      "orderId": "",
-      "id": "",
-      "name": "",
-      "price": "",
-      "quantity": ""
+      "id": "b625",
+      "username": "yourUsername",
+      "date": "12:4:40 Thursday 23 May 2024",
+      "totalPrice": "390.00",
+      "items": [
+        {
+          "itemName": "Running Shoes",
+          "itemPrice": 100,
+          "quantity": 3
+        },
+        {
+          "itemName": "Leather Belt",
+          "itemPrice": 50,
+          "quantity": 1
+        },
+        {
+          "itemName": "Casual Shorts",
+          "itemPrice": 40,
+          "quantity": 1
+        }
+      ]
     }
   ]
 }

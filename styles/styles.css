@@ -34,7 +34,7 @@ h1, h2 {
 }
 
 button {
-    background-color: #5cb85c;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -43,7 +43,7 @@ button {
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #0056b3;
 }
 
 .cart-summary {
@@ -52,14 +52,17 @@ button:hover {
 }
 
 a.cart-link {
-    background-color: #007bff;
     color: white;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
 }
 
-a.cart-link:hover {
+.navBtn {
+    background-color: #007bff;
+}
+
+.navBtn:hover {
     background-color: #0056b3;
 }
 
@@ -91,13 +94,21 @@ a.cart-link:hover {
 }
 
 .cart-item-buttons .increase {
-    background-color: #5cb85c;
+    background-color: #007bff;
     color: white;
 }
 
 .cart-item-buttons .decrease {
-    background-color: #f0ad4e;
+    background-color: #007bff;
     color: white;
+}
+
+.increase:hover,.decrease:hover {
+    background-color: #0056b3;
+}
+
+.delete:hover {
+    background-color: #a9534f;
 }
 
 .cart-item-buttons .delete {
@@ -108,20 +119,22 @@ a.cart-link:hover {
 a.back-link {
     display: block;
     text-align: center;
-    margin-top: 20px;
-    background-color: #007bff;
+    background: transparent;
     color: white;
     text-decoration: none;
-    padding: 10px;
     border-radius: 5px;
-}
-
-a.back-link:hover {
-    background-color: #0056b3;
 }
 
 .total {
     text-align: center;
     margin-top: 20px;
     font-size: 1.5em;
+}
+
+.CheckOut {
+    background-color: #007bff;
+}
+
+.CheckOut:hover {
+    background-color: #0056b3;
 }
