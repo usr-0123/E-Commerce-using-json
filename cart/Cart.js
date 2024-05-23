@@ -8,7 +8,7 @@ async function getCartItems() {
 
 getCartItems();
 
-function showItems(cartData) {
+async function showItems(cartData) {
   const container = document.getElementById('cart-items');
   let totalPrice = 0;
 
@@ -33,6 +33,11 @@ function showItems(cartData) {
 };
 
   container.appendChild(checkoutButton);
+
+  const orderLength = await fetch(baseURL + "orders")
+ const orderLengthData = await orderLength.json();
+
+ document.getElementById('order-count').textContent = `${orderLengthData.length}`;
 }
 
 async function pigaOrder(totalPrice, cartItems) {
@@ -58,6 +63,7 @@ async function pigaOrder(totalPrice, cartItems) {
     body: JSON.stringify(newOrder)
   });
   alert('Order placed successfully!')
+  location.reload()
 }
 
 async function addItemQuantities(id, quantity) {
