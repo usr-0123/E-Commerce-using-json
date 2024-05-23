@@ -1,32 +1,70 @@
 {
-    "users":[
-        {
-            "username":"",
-            "password":""
-        }
-    ],
-    "products":[
-        {
-            "id":"",
-            "name":"",
-            "price":""
-        }
-    ],
-    "cart":[
-        {
-            "id":"",
-            "name":"",
-            "price":"",
-            "quantity":""
-        }
-    ],
-    "orders":[
-        {
-            "orderId":"",
-            "id":"",
-            "name":"",
-            "price":"",
-            "quantity":""
-        }
-    ]
+  "users": [
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "id": "6f05"
+    },
+    {
+      "id": "173b",
+      "username": "evan_mworia",
+      "email": "evannji99@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "db48",
+      "username": "evannji99@gmail.com",
+      "email": "evannji99@gmail.com",
+      "password": "1213"
+    },
+    {
+      "id": "41a6",
+      "username": "evannji99@gmail.com",
+      "email": "evannji99@gmail.com",
+      "password": "1112344567890987654"
+    },
+    {
+      "id": "7591",
+      "username": "evannji99@gmail.com",
+      "email": "evannji99@gmail.com",
+      "password": "1234567890-"
+    },
+    {
+      "id": "97be",
+      "username": "sdffsdfsdfsdfsdf",
+      "email": "evannji99@gmail.com",
+      "password": "dxccx ds cx "
+    },
+    {
+      "id": "9692",
+      "username": "mtaalinktechnologies@gmail.com",
+      "email": "evannji99@gmail.com",
+      "password": "sknnscnksncnksnoco"
+    }
+  ],
+  "products": [
+    {
+      "id": "",
+      "name": "",
+      "price": ""
+    }
+  ],
+  "cart": [
+    {
+      "id": "",
+      "name": "",
+      "price": "",
+      "quantity": ""
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "",
+      "id": "",
+      "name": "",
+      "price": "",
+      "quantity": ""
+    }
+  ]
 }

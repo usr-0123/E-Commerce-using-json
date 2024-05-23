@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signup</title>
+        <link rel="stylesheet" href="../authStyles.css" />
+        <script src="./Register.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container" id="signup-form">
+                <h2>Sign Up</h2>
+                <form id="signup">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required />
+                    <label for="email">Email </label>
+                    <input type="email" id="email" name="email" required />
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                    />
+                    <button type="submit" onclick="registerUser()">
+                        Sign Up
+                    </button>
+                </form>
+                <h4>
+                    <i>
+                        Already have an account?<a href="../login/Login.html"
+                            >Click here.</a
+                        >to login to your account</i
+                    >
+                </h4>
+            </div>
+            <h4 id="response"><i></i></h4>
+        </div>
+    </body>
+</html>
