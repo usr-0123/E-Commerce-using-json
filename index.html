@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        .welcome-message {
+            font-size: 2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-message">Welcome to Our Shop!</div>
+    </div>
+    <script>
+        const userDetails = localStorage.getItem('loggedInUser');
+
+        const user = userDetails ? JSON.parse(userDetails) : null
+
+        setTimeout(() => {
+            user ? window.location.href = './products/products.html' : window.location.href = './auth/login/Login.html'
+        }, 3000);
+    </script>
+</body>
+</html>
