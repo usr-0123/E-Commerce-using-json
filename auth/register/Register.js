@@ -9,32 +9,39 @@ async function registerUser() {
     document.querySelector('form').addEventListener('submit', function (event) {
         event.preventDefault();
     });
+
     //password validation checks
     let pwd = password.value;
     let uid = userName.value;
     let isExisting = await getUserNames(uid);
 
-    console.log(isExisting);
-
     if (pwd.trim() == '' || pwd.length < 8) {
         alert(
             'Passwords should contain ATLEAST 8 characters exclusive of whitespaces'
         );
+        return
     }
     if (isExisting) {
         alert('Username is already taken');
-        // console.log('Taken');
+        return
     } else {
         let newUser = {
             username: userName.value,
             email: email.value,
             password: password.value,
         };
-        fetch(BASEURL, {
+
+        const res = await fetch(BASEURL, {
             method: 'POST',
             body: JSON.stringify(newUser),
         });
-        alert('Your Account has been created successfully');
+
+        if (res.statusText == "Created") {
+            alert('Your Account has been created successfully');
+            window.location.href = '../login/Login.html'
+        } else {
+            alert('Account registration failed!')
+        }
     }
 }
 async function getUserNames(usernames) {

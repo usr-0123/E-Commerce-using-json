@@ -1,5 +1,21 @@
+// First check if user has logged in, if not then navigate to the logn page first. else continue to shopping
+const userDetails = localStorage.getItem('loggedInUser');
+
+const user = userDetails ? JSON.parse(userDetails) : null
+
+if (!user) {
+  window.location.href = '../index.html'
+}
+
 const baseURL = "http://localhost:3000/";
 let cart = [];
+
+function logout() {
+  localStorage.clear('loggedInUser');
+  window.location.href = './index.html'
+}
+document.getElementById('logout').addEventListener('click',logout)
+
 
 async function getProducts() {
   const response = await fetch(baseURL + "products");
@@ -24,13 +40,19 @@ async function showData(data) {
     `;
     itemsContainer.appendChild(itemDiv);
   });
+  getCartItems()
+  getOrders()
+}
 
+async function getCartItems() {
   const cartLength = await fetch(baseURL + "cart")
-  const orderLength = await fetch(baseURL + "orders")
   const cartLengthData = await cartLength.json();
-  const orderLengthData = await orderLength.json();
-
   document.getElementById('cart-count').textContent = `${cartLengthData.length}`;
+}
+
+async function getOrders() {
+  const orderLength = await fetch(baseURL + "orders")
+  const orderLengthData = await orderLength.json();
   document.getElementById('order-count').textContent = `${orderLengthData.length}`;
 }
 

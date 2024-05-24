@@ -1,3 +1,12 @@
+// First check if user has logged in, if not then navigate to the logn page first. else continue to shopping
+const userDetails = localStorage.getItem('loggedInUser');
+
+const user = userDetails ? JSON.parse(userDetails) : null
+
+if (!user) {
+  window.location.href = '../index.html'
+}
+
 const baseURL = "http://localhost:3000/";
 
 async function getOrders() {

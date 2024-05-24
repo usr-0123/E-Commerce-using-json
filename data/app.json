@@ -1,9 +1,10 @@
 {
   "users": [
     {
-      "username": "",
-      "password": "",
-      "id": "c417"
+      "id": "6774",
+      "username": "lewis",
+      "email": "lewis@gmail.com",
+      "password": "12345678"
     }
   ],
   "products": [
@@ -11,7 +12,7 @@
       "productId": "1",
       "name": "Running Shoes",
       "price": 100,
-      "available": 24,
+      "available": 23,
       "id": "5449"
     },
     {
@@ -76,7 +77,7 @@
       "id": "5449",
       "itemName": "Running Shoes",
       "itemPrice": 100,
-      "quantity": 3
+      "quantity": 4
     },
     {
       "id": "8798",

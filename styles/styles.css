@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    /* max-width: 1440px; */
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -19,7 +19,7 @@ h1, h2 {
 
 .items {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin: 20px 0;
     flex-wrap: wrap;
 }
