@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    height: 96vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.header {
+    width: 98.5%;
+    color: aliceblue;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+}
+
+.logo {
+    width: 40%;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 98.5%;
+    padding: 20px 10px 20px 10px;
+    height: 80vh;
+}
+
+/* Home */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 30px;
+    overflow: scroll;
+    height: 85%;
+}
+
+.prodHeader{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+}
+
+.sortSelection {
+    border: transparent;
+}
+
+p, h1, h2 {
+    line-height: normal;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.item {
+    background-color: #e4e4e4;
+    padding: 20px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Cart */
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+    list-style: none;
+    overflow: scroll;
+}
+
+.cart-item {
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cart-item-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.button {
+    padding: 5px;
+    width: 120px;
+    border-radius: 5px;
+    border: transparent;
+}
+
+/* Orders */
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+    overflow: scroll;
+    list-style: none;
+    height: 83%;
+}
+
+.order-item {
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Profile */
+.profMain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+}
+
+.names, .username, .email, .password {
+    display: flex;
+    gap: 10px;
+    min-width: 500px;
+    padding: 10px;
+    border: transparent;
+    background-color: #fff;
+}
+
+.passwordField, .usernameField, .emailField {
+    border: transparent;
+    border-style: none;
+    width: 100%;
+}

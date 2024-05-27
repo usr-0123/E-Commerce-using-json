@@ -14,9 +14,11 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
         }
+
         .container {
             text-align: center;
         }
+
         .welcome-message {
             font-size: 2rem;
             color: #333;
@@ -33,7 +35,7 @@
         const user = userDetails ? JSON.parse(userDetails) : null
 
         setTimeout(() => {
-            user ? window.location.href = './products/products.html' : window.location.href = './auth/login/Login.html'
+            user ? window.location.href = './main/app.html' : window.location.href = './auth/login/Login.html'
         }, 3000);
         
     </script>

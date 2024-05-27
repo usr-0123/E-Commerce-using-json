@@ -6,19 +6,17 @@ async function logUser() {
     document.querySelector('form').addEventListener('submit', function (event) {
         event.preventDefault();
     });
-    // Check if the fields are empty
+
     if (username.value == '' && password.value == '') {
         alert('Enter your login credentials')
         return
     }
 
-    //check if the username only is empty
     if (username.value == '') {
         alert('Enter username')
         return
     }
 
-    //is password empty
     if (password.value == '') {
         alert('Enter password')
         return
@@ -31,7 +29,7 @@ async function logUser() {
 
     if (isCredentialsValid) {
         alert(`Welcome ${username.value}`);
-        window.location.href = '../../products/products.html'
+        window.location.href = '../../main/app.html'
     } else {
         alert('Wrong Credentials');
     }
@@ -40,19 +38,22 @@ async function logUser() {
 async function checkCredentials(username, password) {
     const response = await fetch(BASEURL, { method: 'GET' });
     const allUsers = await response.json();
-
-    // Check if there is a user with the provided username and password
+    
     const isValid = allUsers.some(
         (user) => user.username === username && user.password === password
     );
 
-    if (isValid == true) {
-        // Filter the users data then save it to the local storage
-        const user = JSON.stringify(username);
+    if (allUsers.length == 1 || isValid) {
 
-        // Store the string in local storage
-        localStorage.setItem('loggedInUser', user);
+        const userData = allUsers.filter(data => data.username == username)
+        const tokenTime = new Date()
+        const user = {id:userData[0].id, email:userData[0].email, username:userData[0].username, tokenTime}
+        const data = JSON.stringify({user})
+
+        localStorage.setItem('loggedInUser', data);
+
+        return true
+    } else {
+        return false
     }
-
-    return isValid;
 }

@@ -3,8 +3,14 @@
     {
       "id": "6774",
       "username": "lewis",
+      "email": "lewis1@gmail.com",
+      "password": "newpasswords"
+    },
+    {
+      "id": "6794",
+      "username": "lewiz",
       "email": "lewis@gmail.com",
-      "password": "12345678"
+      "password": "newpasswords"
     }
   ],
   "products": [
@@ -12,28 +18,28 @@
       "productId": "1",
       "name": "Running Shoes",
       "price": 100,
-      "available": 23,
+      "available": 12221,
       "id": "5449"
     },
     {
       "productId": "2",
       "name": "Denim Jacket",
       "price": 100,
-      "available": 12,
+      "available": 11108,
       "id": "9276"
     },
     {
       "productId": "3",
       "name": "Silk Scarf",
       "price": 30,
-      "available": 35,
+      "available": 30,
       "id": "619f"
     },
     {
       "productId": "4",
       "name": "Casual Shorts",
       "price": 40,
-      "available": 49,
+      "available": 48,
       "id": "7549"
     },
     {
@@ -70,48 +76,51 @@
       "price": 90,
       "available": 5,
       "id": "35bc"
-    }
-  ],
-  "cart": [
-    {
-      "id": "5449",
-      "itemName": "Running Shoes",
-      "itemPrice": 100,
-      "quantity": 4
     },
     {
-      "id": "8798",
-      "itemName": "Leather Belt",
-      "itemPrice": 50,
-      "quantity": 1
+      "productId": "10",
+      "name": "Backpack",
+      "price": 90,
+      "available": 5,
+      "id": "34bc"
     },
     {
-      "id": "7549",
-      "itemName": "Casual Shorts",
-      "itemPrice": 40,
-      "quantity": 1
+      "productId": "11",
+      "name": "Beanie cap",
+      "price": 90,
+      "available": 4,
+      "id": "65gc"
+    },
+    {
+      "productId": "12",
+      "name": "Cargo pants",
+      "price": 90,
+      "available": 1,
+      "id": "jfds"
     }
   ],
+  "cart": [],
   "orders": [
     {
-      "id": "b625",
-      "username": "yourUsername",
-      "date": "12:4:40 Thursday 23 May 2024",
-      "totalPrice": "390.00",
+      "id": "f305",
+      "date": "23:30:42 Monday 27 May 2024",
+      "itemPrice": "130.00",
+      "userId": "6774",
       "items": [
         {
-          "itemName": "Running Shoes",
-          "itemPrice": 100,
-          "quantity": 3
-        },
-        {
-          "itemName": "Leather Belt",
-          "itemPrice": 50,
+          "id": "5ff5",
+          "productId": "619f",
+          "userId": "6774",
+          "itemName": "Silk Scarf",
+          "itemPrice": 30,
           "quantity": 1
         },
         {
-          "itemName": "Casual Shorts",
-          "itemPrice": 40,
+          "id": "526a",
+          "productId": "9276",
+          "userId": "6774",
+          "itemName": "Denim Jacket",
+          "itemPrice": 100,
           "quantity": 1
         }
       ]

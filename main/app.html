@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Shopee
+            <input type="text" class="search" id="search" placeholder="Search items">
+        </div>
+        <div class="navbar">
+            <span onclick="showPage('home')">Home</span>
+            <span onclick="showPage('cart')" id="cart-count">Cart</span>
+            <span onclick="showPage('orders')" id="order-count">Orders</span>
+            <span onclick="showPage('profile')">Profile</span>
+        </div>
+    </div>
+    <div class="main" id="container">
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
