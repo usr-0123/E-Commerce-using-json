@@ -15,90 +15,143 @@
   ],
   "products": [
     {
-      "productId": "1",
-      "name": "Running Shoes",
+      "name": "Laptop",
+      "price": 1200,
+      "available": 150,
+      "id": "001"
+    },
+    {
+      "name": "Smartphone",
+      "price": 800,
+      "available": 300,
+      "id": "002"
+    },
+    {
+      "name": "Tablet",
+      "price": 600,
+      "available": 250,
+      "id": "003"
+    },
+    {
+      "name": "Smartwatch",
+      "price": 200,
+      "available": 500,
+      "id": "004"
+    },
+    {
+      "name": "Gaming Console",
+      "price": 500,
+      "available": 100,
+      "id": "005"
+    },
+    {
+      "name": "Wireless Earbuds",
+      "price": 150,
+      "available": 1000,
+      "id": "006"
+    },
+    {
+      "name": "Bluetooth Speaker",
+      "price": 120,
+      "available": 800,
+      "id": "007"
+    },
+    {
+      "name": "Digital Camera",
+      "price": 900,
+      "available": 75,
+      "id": "008"
+    },
+    {
+      "name": "External Hard Drive",
       "price": 100,
-      "available": 12221,
-      "id": "5449"
+      "available": 600,
+      "id": "009"
     },
     {
-      "productId": "2",
-      "name": "Denim Jacket",
-      "price": 100,
-      "available": 11109,
-      "id": "9276"
+      "name": "Smart Thermostat",
+      "price": 250,
+      "available": 400,
+      "id": "010"
     },
     {
-      "productId": "3",
-      "name": "Silk Scarf",
-      "price": 30,
-      "available": 31,
-      "id": "619f"
+      "name": "VR Headset",
+      "price": 350,
+      "available": 200,
+      "id": "011"
     },
     {
-      "productId": "4",
-      "name": "Casual Shorts",
-      "price": 40,
-      "available": 48,
-      "id": "7549"
+      "name": "Fitness Tracker",
+      "price": 130,
+      "available": 700,
+      "id": "012"
     },
     {
-      "productId": "5",
-      "name": "Leather Belt",
+      "name": "E-Reader",
+      "price": 140,
+      "available": 450,
+      "id": "013"
+    },
+    {
+      "name": "Portable Projector",
+      "price": 300,
+      "available": 180,
+      "id": "014"
+    },
+    {
+      "name": "Smart Home Hub",
+      "price": 220,
+      "available": 350,
+      "id": "015"
+    },
+    {
+      "name": "Noise-Cancelling Headphones",
+      "price": 300,
+      "available": 500,
+      "id": "016"
+    },
+    {
+      "name": "Electric Scooter",
+      "price": 400,
+      "available": 130,
+      "id": "017"
+    },
+    {
+      "name": "Robot Vacuum",
+      "price": 450,
+      "available": 320,
+      "id": "018"
+    },
+    {
+      "name": "Action Camera",
+      "price": 300,
+      "available": 210,
+      "id": "019"
+    },
+    {
+      "name": "Wireless Charger",
       "price": 50,
-      "available": 34,
-      "id": "8798"
-    },
-    {
-      "productId": "6",
-      "name": "Winter Gloves",
-      "price": 60,
-      "available": 43,
-      "id": "9bea"
-    },
-    {
-      "productId": "7",
-      "name": "Wool Socks",
-      "price": 70,
-      "available": 67,
-      "id": "40ae"
-    },
-    {
-      "productId": "8",
-      "name": "Sports Cap",
-      "price": 80,
-      "available": 92,
-      "id": "61c1"
-    },
-    {
-      "productId": "9",
-      "name": "Hoodie",
-      "price": 90,
-      "available": 5,
-      "id": "35bc"
-    },
-    {
-      "productId": "10",
-      "name": "Backpack",
-      "price": 90,
-      "available": 5,
-      "id": "34bc"
-    },
-    {
-      "productId": "11",
-      "name": "Beanie cap",
-      "price": 90,
-      "available": 4,
-      "id": "65gc"
-    },
-    {
-      "productId": "12",
-      "name": "Cargo pants",
-      "price": 90,
-      "available": 1,
-      "id": "jfds"
+      "available": 999,
+      "id": "020"
     }
   ],
   "cart": [],
-  "orders": []
+  "orders": [
+    {
+      "id": "b97d",
+      "date": "12:34:48 Tuesday 28 May 2024",
+      "itemPrice": "50.00",
+      "userId": "6774",
+      "items": [
+        {
+          "id": "332a",
+          "productId": "020",
+          "userId": "6774",
+          "itemName": "Wireless Charger",
+          "itemPrice": 50,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
 }
