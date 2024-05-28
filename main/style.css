@@ -36,6 +36,11 @@ body {
     justify-content: space-between;
 }
 
+.navbar span:hover {
+    color: aqua;
+    font-weight: 700;
+}
+
 .main {
     width: 98.5%;
     padding: 20px 10px 20px 10px;

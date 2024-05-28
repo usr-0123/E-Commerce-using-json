@@ -72,6 +72,7 @@ function showPage(page) {
 
         profile: `
             <h2>Profile</h2>
+            <button id="logout">Logout</button>
             <div class="profMain">
                 <div class="profileContainer">
 
@@ -155,7 +156,6 @@ async function getProducts() {
 async function showProducts(productsData) {
     const productsContainer = document.getElementById('products')
     productsContainer.innerHTML = ''
-    console.log('Data:',productsData);
 
     if (productsData.length == 0) {
         const productElement = document.createElement('div')
@@ -545,6 +545,16 @@ async function showProfile() {
     
     savePasswordBtn.onclick = function() {
         saveChanges(editPasswordInput, profileData, 'password')
+    }
+
+    // Logout
+    const logoutBtn = document.getElementById('logout')
+    logoutBtn.addEventListener('click', () => logout() )
+
+    function logout() {
+        // Clear local storage
+        localStorage.clear('loggedInUser')
+        location.reload()
     }
 }
 
