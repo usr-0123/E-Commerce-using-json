@@ -25,14 +25,14 @@
       "productId": "2",
       "name": "Denim Jacket",
       "price": 100,
-      "available": 11108,
+      "available": 11109,
       "id": "9276"
     },
     {
       "productId": "3",
       "name": "Silk Scarf",
       "price": 30,
-      "available": 30,
+      "available": 31,
       "id": "619f"
     },
     {
@@ -100,30 +100,5 @@
     }
   ],
   "cart": [],
-  "orders": [
-    {
-      "id": "f305",
-      "date": "23:30:42 Monday 27 May 2024",
-      "itemPrice": "130.00",
-      "userId": "6774",
-      "items": [
-        {
-          "id": "5ff5",
-          "productId": "619f",
-          "userId": "6774",
-          "itemName": "Silk Scarf",
-          "itemPrice": 30,
-          "quantity": 1
-        },
-        {
-          "id": "526a",
-          "productId": "9276",
-          "userId": "6774",
-          "itemName": "Denim Jacket",
-          "itemPrice": 100,
-          "quantity": 1
-        }
-      ]
-    }
-  ]
+  "orders": []
 }

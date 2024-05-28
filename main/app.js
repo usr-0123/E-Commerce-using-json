@@ -8,7 +8,6 @@ const check = userDetails ? JSON.parse(userDetails) : null
 if (!userDetails) {
     window.location.href = '../index.html'
 }
-
 const {id, email, username, tokenTime} = check.user
 
 const userInfo = {"id":id, "email":email, "username":username, "tokenTime":tokenTime}
@@ -112,7 +111,6 @@ function showPage(page) {
     document.getElementById('container').innerHTML = htmlContent;
     getProducts()
     showProfile()
-    // getOrders()
     getCart()
 }
 
@@ -157,6 +155,16 @@ async function getProducts() {
 async function showProducts(productsData) {
     const productsContainer = document.getElementById('products')
     productsContainer.innerHTML = ''
+    console.log('Data:',productsData);
+
+    if (productsData.length == 0) {
+        const productElement = document.createElement('div')
+        productElement.innerHTML = `
+        <div>No data available</div>
+        `
+        productsContainer.appendChild(productElement)
+    }
+
     productsData && productsData.forEach(async product => {
         const productElement = document.createElement('div')
         productElement.classList.add('product')
@@ -182,10 +190,8 @@ async function addToCart( id, userId, name, price ) {
         const userCart = cartData.filter(data => data.userId == userId && data.itemName == name )
 
         if (userCart.length >= 1 ) {
-            // Add the number of items in the cart
             alert(`${name} already in the cart`)
         } else {
-            // Add it as a new item
             let cartItem = { productId:id, userId, itemName:name, itemPrice:price, quantity: 1 };
             const res = await fetch(url + "cart", {
                 method: "POST",
@@ -224,6 +230,15 @@ async function getCart() {
 
     const cartContainer = document.getElementById('cartpage')
     cartContainer.innerHTML = ''
+
+    if (userCartData.length == 0) {
+        const cartElement = document.createElement('div')
+        cartElement.innerHTML = `
+        <div>No items available in your cart. Add items to your cart to make orders.</div>
+        `
+        cartContainer.appendChild(cartElement)
+    }
+
     userCartData && userCartData.forEach(item => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
@@ -389,10 +404,18 @@ function getDateToday() {
 // orders page
 async function getOrders(userOrders){
 
-    console.log(userOrders);
     document.getElementById('order-count').textContent = userOrders ? `Orders (${userOrders.length})` : `Orders`
     const ordersContainer = document.getElementById('orders')
     ordersContainer.innerHTML = ''
+
+    if (userOrders.length == 0) {
+        const orderElement = document.createElement('div')
+        orderElement.innerHTML = `
+        <div>You don't have orders currently.</div>
+        `
+        ordersContainer.appendChild(orderElement)
+    }
+
     userOrders && userOrders.forEach(async order => {
         const orderElement = document.createElement('div')
         orderElement.classList.add('product')

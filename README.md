@@ -27,5 +27,5 @@ Be able to add and show  logged in User Orders
 
 ## Bonus Features(Optional):
 - Implement search functionality for products.
-- Allow adding product reviews and ratings.
+- Allow adding product reviews and ratings. %%
 - Implement user account management (profile editing, etc.).
