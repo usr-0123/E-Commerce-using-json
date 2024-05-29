@@ -30,3 +30,24 @@ Be able to add and show  logged in User Orders
 - Allow adding product reviews and ratings. %%
 - Implement user account management (profile editing, etc.).
 - Logout
+
+# To run this simple app in your machine
+
+1. Clone this repository
+2. Install `json-server` using the command below
+```
+npm i json-server
+```
+Or globally
+```
+npm i -g json-server
+```
+3. Run the json file in the `./data/app.json` using the command below
+```
+json-server ./data/app.json
+```
+4. Open the index file `index.html` with your desired browser
+- Register an account to get started.
+- Login and interact with this aplication
+
+# Note: This simple application is only available for desktops only.
